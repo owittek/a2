@@ -1,0 +1,21 @@
+[package]
+name = "a2"
+version = "0.1.0"
+authors = ["Olivier Wittek <57495944+owittek@users.noreply.github.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15"
+tracing = "0.1.37"
+tracing-subscriber = "0.3"
+
+[dependencies.tokio]
+version = "1.27.0"
+features = ["macros", "rt-multi-thread", "signal"]
+
+[dependencies.serenity]
+version = "0.11"
+git = "https://github.com/serenity-rs/serenity.git"
+features = ["cache", "framework", "standard_framework"]
